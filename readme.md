@@ -2,7 +2,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Python 3.9.5=0](https://img.shields.io/badge/python-3.9.5-blue.svg)](https://www.python.org/downloads/release/python-395/)
 
-Repository template used for python projects. To make it work, replace `{name of your repo}` with your target repository name in the following files:
+Repository template used for python projects. To make it work, replace `file-manager` with your target repository name in the following files:
 * readme.md
 * .env
 * .env.leave
@@ -12,12 +12,12 @@ Repository template used for python projects. To make it work, replace `{name of
 Before anything, you must have pyenv installed in order to run the scripts smoothly.
 [How to setup pyenv](#pyenv-guide-for-handling-multiple-python-versions-in-your-mac)
 
-In case you have autoenv installed, the repo should get automatically set up as soon as you `cd {name of your repo}`. :crystal_ball:
+In case you have autoenv installed, the repo should get automatically set up as soon as you `cd file-manager`. :crystal_ball:
 [How to setup autoenv](#guide-for-ultimate-repository-setup-with-autoenv)
 
 In case you don't have autoenv, you can also manually set up the environment by running:
 ```bash
-cd {name of your repo}
+cd file-manager
 pyenv install $(cat .python-version)
 python -mvenv venv
 source venv/bin/activate
@@ -98,14 +98,14 @@ $ pyenv install 3.8.7
 When running Python via pyenv, you might get an error such as:
 ```shell
 $ python
-version `3.8.7' is not installed (set by /some-path/{name of your repo}/.python-version)
+version `3.8.7' is not installed (set by /some-path/file-manager/.python-version)
 ```
 This could mean that the recommended Python version for this repository has been changed and you don't yet have it installed. 
 You can easily install it using ```pyenv install [version]```. You will also have to recreate your virtual environment.
 
 How to check the Python version used in the repository
 ```shell
-$ cd {name of your repo}
+$ cd file-manager
 $ python --version
 Python 3.7.10
 ```
@@ -120,7 +120,7 @@ $ cd some-random-dir
 $ python --version
 Python 3.8.7
 $ # but this will not affect the local version
-$ cd {name of your repo}
+$ cd file-manager
 $ python --version
 Python 3.7.10
 ```
