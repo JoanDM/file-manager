@@ -53,6 +53,12 @@ def list_all_image_filenames_in_dir(directory):
     )
 
 
+def list_all_video_filenams_in_dir(directory):
+    return list_all_filenames_in_dir_with_specific_extension(
+        directory, ["MP4", "MOV", "mp4", "mov", "avi"]
+    )
+
+
 def list_all_video_filepaths_in_dir(directory):
     return list_all_filepaths_in_dir_with_specific_extension(
         directory, ["MP4", "MOV", "mp4", "mov", "avi"]
