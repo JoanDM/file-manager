@@ -74,3 +74,7 @@ def load_json_file_content(path_to_json):
 def show_file(file_path):
     new = 2  # open in a new tab, if possible
     webbrowser.open(f"file://{file_path}", new=new)
+
+
+def move_file_to_trash(file_path):
+    file_path.unlink()
